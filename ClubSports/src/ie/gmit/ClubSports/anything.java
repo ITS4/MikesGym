@@ -5,4 +5,5 @@ String bla;
 String bla2;
 String bal3;
 String bigBalls;
+String another:
 }
