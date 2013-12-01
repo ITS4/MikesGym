@@ -20,6 +20,7 @@ header {
     position:relative;
     width:100%;
     z-index:100;
+    background:"images/gym-header.jpg.jpg" width="1370" height="300";
 }
 header h2{
     font-size:22px;
@@ -29,6 +30,7 @@ header h2{
     padding:22px 0;
     position:absolute;
     width:540px;
+       background:"images/M&CGYM.jpg" width="1370" height="300";
 }
 header a.stuts,a.stuts:visited{
     border:none;
