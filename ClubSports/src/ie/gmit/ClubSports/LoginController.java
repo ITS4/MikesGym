@@ -26,16 +26,12 @@ public class LoginController extends HttpServlet {
 		// TODO Auto-generated constructor stub
 	}
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String emailParam = request.getParameter("email");
-		String passwordParam = request.getParameter("password");
-		System.out.println(emailParam + passwordParam);
-
-		String nextUrl = "/View.jsp";
-		Member member= new Member(emailParam,passwordParam);
-		Dao.insertMember(member);
-		System.out.println(member + "this is from bean part");
-
-
+		String email = request.getParameter("email");//takes in email
+		String password = request.getParameter("password");//takes in password
+		String nextUrl = "/Profile.jsp";//might need to change it dynamically later
+		Dao.getMemberByEmailAndPassword(email, password);//passes the two strings to dao method 
+		System.out.println(email + password + "this is from bean part");//
+	
 	request.getRequestDispatcher(nextUrl).forward(request, response);
 		
 	}

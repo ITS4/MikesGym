@@ -11,7 +11,10 @@ public class Utill {
 	 private static final SessionFactory sessionFactory = buildSessionFactory();
 	 private static SessionFactory buildSessionFactory() {
 	  try {
+		  
+		  
 		  Configuration configuration = new Configuration();
+		  configuration.addAnnotatedClass(Member.class);
 		  configuration.configure();
 		  ServiceRegistry serviceRegistry = new ServiceRegistryBuilder().applySettings(configuration.getProperties()).buildServiceRegistry(); 
 		  return configuration.buildSessionFactory(serviceRegistry);

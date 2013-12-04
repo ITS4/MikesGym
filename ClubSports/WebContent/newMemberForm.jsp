@@ -13,7 +13,7 @@
 <div>
 	<div class="center">
 		
-		<form name="NewMember" id="NewMember" action="LoginController"
+		<form name="NewMember" id="NewMember" action="NewMemberController"
 			method="post" accept-charset="utf-8">
 			<table border="0">
 				<tbody>

@@ -25,5 +25,6 @@
 	<classpathentry kind="lib" path="C:/Users/Michael/Dropbox/lib/mysql-connector-java-5.1.22-bin.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Michael/Dropbox/lib/slf4j-simple-1.7.2.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/hibernateStuff"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
