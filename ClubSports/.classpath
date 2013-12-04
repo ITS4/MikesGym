@@ -13,18 +13,35 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
-	<classpathentry kind="lib" path="C:/Users/Michael/Dropbox/lib/antlr-2.7.7.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Michael/Dropbox/lib/dom4j-1.6.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Michael/Dropbox/lib/hibernate-commons-annotations-4.0.1.Final.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Michael/Dropbox/lib/hibernate-core-4.1.7.Final.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Michael/Dropbox/lib/hibernate-entitymanager-4.1.7.Final.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Michael/Dropbox/lib/hibernate-jpa-2.0-api-1.0.1.Final.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Michael/Dropbox/lib/javassist-3.15.0-GA.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Michael/Dropbox/lib/jboss-logging-3.1.0.GA.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Michael/Dropbox/lib/jboss-transaction-api_1.1_spec-1.0.0.Final.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Michael/Dropbox/lib/mysql-connector-java-5.1.22-bin.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Michael/Dropbox/lib/slf4j-simple-1.7.2.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/hibernateStuff"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="lib" path="C:/Users/Colm09/Desktop/hibernate-release-4.2.7.SP1/lib/required/antlr-2.7.7.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Colm09/Desktop/hibernate-release-4.2.7.SP1/lib/required/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Colm09/Desktop/hibernate-release-4.2.7.SP1/lib/required/hibernate-commons-annotations-4.0.2.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Colm09/Desktop/hibernate-release-4.2.7.SP1/lib/required/hibernate-core-4.2.7.SP1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Colm09/Desktop/hibernate-release-4.2.7.SP1/lib/required/hibernate-jpa-2.0-api-1.0.1.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Colm09/Desktop/hibernate-release-4.2.7.SP1/lib/required/javassist-3.18.1-GA.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Colm09/Desktop/hibernate-release-4.2.7.SP1/lib/required/jboss-logging-3.1.0.GA.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Colm09/Desktop/hibernate-release-4.2.7.SP1/lib/required/jboss-transaction-api_1.1_spec-1.0.1.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Colm09/Desktop/hibernate-release-4.2.7.SP1/lib/optional/c3p0/c3p0-0.9.2.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Colm09/Desktop/hibernate-release-4.2.7.SP1/lib/optional/c3p0/hibernate-c3p0-4.2.7.SP1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Colm09/Desktop/hibernate-release-4.2.7.SP1/lib/optional/c3p0/mchange-commons-java-0.2.3.4.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/SpringStuff"/>
+	<classpathentry kind="lib" path="C:/Users/Colm09/Dropbox/SoftDev/jstl-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Colm09/Dropbox/SoftDev/log4j-1.2.17.zip"/>
+	<classpathentry kind="lib" path="C:/Users/Colm09/Downloads/spring-webmvc-3.0.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Colm09/Downloads/apache-tomcat-7.0.47-windows-x64.zip"/>
+	<classpathentry kind="lib" path="C:/Users/Colm09/Downloads/eclipse-jee-kepler-SR1-win32-x86_64.zip"/>
+	<classpathentry kind="lib" path="C:/Users/Colm09/Downloads/hibernate-release-4.2.7.SP1.zip"/>
+	<classpathentry kind="lib" path="C:/Users/Colm09/Downloads/jstl-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Colm09/Downloads/loginform-master.zip"/>
+	<classpathentry kind="lib" path="C:/Users/Colm09/Downloads/MikesGym-master.zip"/>
+	<classpathentry kind="lib" path="C:/Users/Colm09/Downloads/spring-beans-3.0.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Colm09/Downloads/spring-framework-3.0.5.RELEASE.zip"/>
+	<classpathentry kind="lib" path="C:/Users/Colm09/Downloads/spring-webflow-2.3.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Colm09/Desktop/hibernate-release-4.2.7.SP1/lib/osgi/hibernate-osgi-4.2.7.SP1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Colm09/Desktop/hibernate-release-4.2.7.SP1/lib/osgi/org.osgi.core-4.3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Colm09/Desktop/hibernate-release-4.2.7.SP1/lib/envers/hibernate-envers-4.2.7.SP1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Colm09/Desktop/hibernate-release-4.2.7.SP1/lib/jpa/hibernate-entitymanager-4.2.7.SP1.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

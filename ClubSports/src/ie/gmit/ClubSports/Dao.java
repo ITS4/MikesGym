@@ -5,7 +5,6 @@ package ie.gmit.ClubSports;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import javax.servlet.jsp.jstl.core.Config;
 
 import org.hibernate.Query;
