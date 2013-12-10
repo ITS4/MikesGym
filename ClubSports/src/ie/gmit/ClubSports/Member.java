@@ -1,5 +1,6 @@
 package ie.gmit.ClubSports;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -20,6 +21,7 @@ String firstName;
 String password; 
 String email;
 String endDate;
+
 @Id
 @GeneratedValue
 public int getMemId() {
@@ -82,12 +84,14 @@ public String getFirstName() {
 public void setFirstName(String firstName) {
 	this.firstName = firstName;
 }
+@Column(name = "password")
 public String getPassword() {
 	return password;
 }
 public void setPassword(String password) {
 	this.password = password;
 }
+@Column(name = "email")
 public String getEmail() {
 	return email;
 }
@@ -118,6 +122,14 @@ public Member(int memId, String startDate, String dob, String title,
 	this.password = password;
 	this.email = email;
 	this.endDate = endDate;
+}
+
+/**
+ * 
+ */
+public Member() {
+	super();
+	// TODO Auto-generated constructor stub
 }
 public Member(String emailLogin, String passwordLogin) {
 	// TODO Auto-generated constructor stub
