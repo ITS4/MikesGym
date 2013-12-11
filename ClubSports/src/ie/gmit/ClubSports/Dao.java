@@ -3,8 +3,12 @@ package ie.gmit.ClubSports;
 
 
 
+import ie.gmit.its.l7_inclass.User;
+
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
+
 import javax.servlet.jsp.jstl.core.Config;
 
 import org.hibernate.Query;
@@ -17,44 +21,9 @@ import org.hibernate.tool.hbm2ddl.SchemaExport;
 
 
 public class Dao {
-	//	public static void deleteMember(Member member) {
-	//		Transaction trns = null;
-	//		Session session = Utill.getSessionFactory().openSession();
-	//		try {
-	//			trns = session.beginTransaction();
-	//
-	//			session.delete(member);
-	//
-	//			session.getTransaction().commit();
-	//		} catch (RuntimeException e) {
-	//			if(trns != null){
-	//				trns.rollback();
-	//			}
-	//			e.printStackTrace();
-	//		} finally{
-	//			session.flush();
-	//			session.close();
-	//		}
-	//	}	
-	//
-	//	public static void insertMember(Member member){
-	//		Transaction trns = null;
-	//		Session session = Utill.getSessionFactory().openSession();
-	//
-	//		try {
-	//			trns = session.beginTransaction();
-	//
-	//			session.save(member); 
-	//
-	//			session.getTransaction().commit();
-	//		} catch (RuntimeException e) {
-	//			if(trns != null){
-	//				trns.rollback();
-	//			}
-	//			e.printStackTrace();
-	//		}
-	//} 
+
 	public static void addMember(Member  member) {
+		//Working and tested
 		Transaction trns = null;
 		Session session = Utill.getSessionFactory().openSession();
 		try {
@@ -76,13 +45,14 @@ public class Dao {
 		}
 	}
 
-	public void deleteMember(int memId) {
+	public static void deleteMember(int memId) {
+		//Working and tested
 		Transaction trns = null;
 		Session session = Utill.getSessionFactory().openSession();
 		try {
 			trns = session.beginTransaction();
-			Member user = (Member) session.load(Member.class, new Integer(memId));
-			session.delete(user);
+			Member member = (Member) session.load(Member.class, new Integer(memId));
+			session.delete(member);
 			session.getTransaction().commit();
 		} catch (RuntimeException e) {
 			if (trns != null) {
@@ -130,16 +100,19 @@ public class Dao {
 		return members;
 	}
 
-	public Member getMemberById(int memId) {
+	public static Member getMemberById(int memId) {
+		//Working and tested
 		Member member = null;
 		Transaction trns = null;
 		Session session = Utill.getSessionFactory().openSession();
 		try {
 			trns = session.beginTransaction();
+			
 			String queryString = "from Member where id = :memId";
 			Query query = session.createQuery(queryString);
 			query.setInteger("memId", memId);
 			member = (Member) query.uniqueResult();
+			
 		} catch (RuntimeException e) {
 			e.printStackTrace();
 		} finally {
@@ -147,34 +120,40 @@ public class Dao {
 			session.close();
 		}
 		return member;
+	
 	}
-	public static Member getMemberByEmailAndPassword(String email, String password) {
+	public static List<Member> getMemberByEmailAndPassword(String email, String password) {
+		
 		Member member = null;
 		Transaction trns = null;
 		Session session = Utill.getSessionFactory().openSession();
 		try {
 			trns = session.beginTransaction();
-			String queryString = "from Member where email = :email "+" password =:password";
+			String queryString = "from Member where email = :email and password = :password";
 			Query query = session.createQuery(queryString);
 			query.setString("email", email);
 			query.setString("password", password);
 			member = (Member) query.uniqueResult();
+			
+			
 		} catch (RuntimeException e) {
 			e.printStackTrace();
 		} finally {
 			session.flush();
 			session.close();
 		}
-		return member;
+		List<Member> list = new LinkedList<Member>();
+		list.add(member);
+		return list;
 	}
-	public static void  CreateTable() {
-		AnnotationConfiguration config = new AnnotationConfiguration();
-		config.addAnnotatedClass(Member.class);
-		config.configure();
-
-		new SchemaExport(config).create(true, true);
-
-	}
+//	public static void  CreateTable() {
+//		AnnotationConfiguration config = new AnnotationConfiguration();
+//		config.addAnnotatedClass(Member.class);
+//		config.configure();
+//
+//		new SchemaExport(config).create(true, true);
+//
+//	}
 
 
 }

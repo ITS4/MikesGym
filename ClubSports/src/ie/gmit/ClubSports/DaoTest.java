@@ -8,7 +8,7 @@ public class DaoTest {
 
 	@Test
 	public void test() {
-		Dao.CreateTable();
+	//	Dao.CreateTable();
 		
 	}
 
