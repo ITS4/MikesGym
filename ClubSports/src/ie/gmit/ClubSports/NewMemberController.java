@@ -56,7 +56,7 @@ public class NewMemberController extends HttpServlet {
 		String nextUrl = "/Profile.jsp";
 		
 		Member member= new Member(0, startDate, dob, title, mobile, county, town, address, lastName, firstName, password, email, endDate);
-		Dao.CreateTable();
+		
 		
 		
 		Dao.addMember(member);
