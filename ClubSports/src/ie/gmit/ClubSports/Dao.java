@@ -3,7 +3,7 @@ package ie.gmit.ClubSports;
 
 
 
-import ie.gmit.its.l7_inclass.User;
+
 
 import java.util.ArrayList;
 import java.util.LinkedList;

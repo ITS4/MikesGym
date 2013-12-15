@@ -1,12 +1,7 @@
-package ie.gmit.ClubSports;
+	package ie.gmit.ClubSports;
 
 
 
-
-import ie.gmit.its.l7_inclass.User;
-import ie.gmit.its.l7_inclass.UserDAO;
-import ie.its.Authenication.HttpSession;
-import ie.its.loginuser.LoginUser;
 
 import java.io.IOException;
 import java.sql.SQLException;
@@ -41,16 +36,18 @@ public class LoginController extends HttpServlet {
 
 		if (email != null && password != null ) {
 			Dao.getMemberByEmailAndPassword(email, password);//passes the two strings to dao method 
-			
+
 			List<Member> profileList = Dao.getMemberByEmailAndPassword(email, password);
 			request.setAttribute("profileList", profileList);
 			for (Member profileItem : profileList){
-				System.out.println(profileItem);
-			request.getRequestDispatcher(nextUrl).forward(request, response);
-		}
-		
-	
-			
+				System.out.println(profileItem);}
+				request.getRequestDispatcher(nextUrl).forward(request, response);
+			}else { 
+				nextUrl = "/login.jsp";	
+				request.getRequestDispatcher(nextUrl).forward(request, response);
+				}
+
+
 
 		}
 	}

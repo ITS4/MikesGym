@@ -32,8 +32,8 @@
                 <tr>
                     <td>${member.memId}</td>
                     <td>${member.email}</td>
-                    <td>${member.firstname}</td>
-                    <td>${member.lastname}</td>
+                    <td>${member.firstName}</td>
+                    <td>${member.lastName}</td>
                     <td>${member.address}</td>
                     <td>${member.town}</td>
                     <td>${member.county}</td>
