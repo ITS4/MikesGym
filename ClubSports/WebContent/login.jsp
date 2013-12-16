@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<div class = "container">
 <head>
 <title>Login</title>
  <link href="css/layout.css" rel="stylesheet" type="text/css" />
@@ -10,6 +11,7 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 </head>
 <body>
+
 	<section class="loginform cf">
 		<form name="Existinglogin" action="LoginController" method="post"
 			accept-charset="utf-8">
@@ -28,6 +30,8 @@
 			</ul>
 		</form>
 	</section>
+	
 </body>
+</div>
 </html>
 
