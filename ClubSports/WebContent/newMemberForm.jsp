@@ -11,7 +11,7 @@
 </head>
 <body>
 <div>
-	<div class="center">
+	<div class="container">
 		
 		<form name="NewMember" id="NewMember" action="NewMemberController"
 			method="post" accept-charset="utf-8">

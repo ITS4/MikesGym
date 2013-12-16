@@ -30,8 +30,8 @@ var aLoops = []; // sound loops
 addEvent(window, 'load', function (event) {
 
     // load music files
-    aLoops[0] = new Audio('media/eyeofthetiger.ogg');
-    aLoops[0].volume = 0.3;
+  //  aLoops[0] = new Audio('media/eyeofthetiger.ogg');
+   // aLoops[0].volume = 0.3;
     aLoops[1] = new Audio('media/button.ogg');
     aLoops[1].volume = 1.0;
     aLoops[2] = new Audio('media/button_click.ogg');
