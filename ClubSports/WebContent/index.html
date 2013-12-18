@@ -1,15 +1,23 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-
 <meta charset="utf-8" />
-<title>M&C GYM</title>
+
 <link href="css/layout.css" rel="stylesheet" type="text/css" />
 <link href="css/menu.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="global.css" />
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 
 </head>
+<header>
+	<div class="wrapper">
+		<a href="#"><img src="img/Logo.jpg" alt="mysquare logo"
+			title="M&C Clubs " /></a> <span id="usernav"><a href="#">Logout</a>
+			- <a href="#">Settings</a> - <a href="#">My Profile<span><img
+					src="img/user_avatar_s.jpg" /></span>
+		</a></span>
+	</div>
+</header>
 <body>
 
 
@@ -17,7 +25,6 @@
 		<center>
 			<ul id="nav">
 				<li><a href="#">Home</a>
-					
 				<li><a href="about.html">About Us</a>
 				<li><a href="#">Membership</a>
 					<ul>
@@ -42,14 +49,14 @@
 			e.preventDefault();
 		});
 	</script>
-<script type="text/javascript">
+	<script type="text/javascript">
 $('#newMemberAJAX').on('click',function(e){
 	var href=$(this).attr('href');
 	$('div.indexContainer').load(href + ' .container');
 e.preventDefault();
 });
 </script>
-	
+
 	<div class="indexContainer"></div>
 </body>
 
