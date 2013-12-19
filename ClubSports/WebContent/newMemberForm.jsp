@@ -12,7 +12,7 @@
 <body>
 <div>
 	<div class="container">
-		
+		<section class="NewMember">
 		<form name="NewMember" id="NewMember" action="NewMemberController"
 			method="post" accept-charset="utf-8">
 			<table border="0">
@@ -92,7 +92,7 @@
 
 
 		</form>
-	
+	</section>
 	</div>
 </div>	
 	
