@@ -1,3 +1,12 @@
+@CHARSET "ISO-8859-1";
+
+.header { width: 850px; overflow: hidden; margin: 0 auto; background: none; }
+
+header { height: 200px; background-color:rgba(255,0,0,0.3); }
+
+header #usernav { float: right; line-height: 100px; font-size: 14px; font-weight: bold; color: #555; }
+header #usernav a { color: #444; text-shadow: 0px 1px 1px #ddd; }
+
 #nav,#nav ul {
     list-style: none outside none;
     margin: 0;
@@ -8,9 +17,9 @@
     font-size: 13px;
     height: 36px;
     list-style: none outside none;
-    margin: 0px auto;
+    margin: 40px auto;
     text-shadow: 0 -1px 3px #202020;
-    width: 1360px;
+    width: 700px;
 
     /* border radius */
     -moz-border-radius: 4px;
@@ -114,4 +123,18 @@
     left: 0;
     top: 34px;
     width: 150px;
+}
+
+.loginform {
+	width: 410px;
+	margin: 50px auto;
+	padding: 25px;
+	background-color: rgba(250,250,250,0.5);
+	border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2), 
+    			inset 0px 1px 0px 0px rgba(250, 250, 250, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+#content{
+	background-color:#888888;height:600px;width:600px;float:left;
 }

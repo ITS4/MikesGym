@@ -3,7 +3,7 @@
 /* @group resets and elements */
 * { margin: 0; padding: 0; }
 
-html { height: 101%; font-family: “Helvetica Neue”, Arial, Helvetica, sans-serif; background: #fff; }
+html { height: 101%; font-family: â€œHelvetica Neueâ€�, Arial, Helvetica, sans-serif; background: #fff; }
 body { font-size: 62.5%; font-family: Helvetica, Arial, sans-serif; line-height: 10%; }
 
 img { border: 0;}
@@ -22,7 +22,7 @@ h4 { color: #232323; font-family: Arial, Tahoma, sans-serif; font-size: 1.1em; l
 /* @group core */
 .wrapper { width: 850px; overflow: hidden; margin: 0 auto; background: none; }
 
-header { height: 100px; background-color: #afafaf; }
+header { height: 100px; background-color:rgba(255,0,0,0.3); }
 
 header #usernav { float: right; line-height: 100px; font-size: 14px; font-weight: bold; color: #555; }
 header #usernav a { color: #444; text-shadow: 0px 1px 1px #ddd; }

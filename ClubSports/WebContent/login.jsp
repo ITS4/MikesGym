@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<div class = "container">
+
 <head>
 <title>Login</title>
  <link href="css/layout.css" rel="stylesheet" type="text/css" />
@@ -10,6 +10,7 @@
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 </head>
+<div class = "container">
 <body>
 
 	<section class="loginform cf">

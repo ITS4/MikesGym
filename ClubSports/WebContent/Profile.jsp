@@ -6,7 +6,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="global.css" />
+<link rel="stylesheet" type="text/css" href="css/global.css" />
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>profile..............</title>
 </head>
@@ -24,16 +24,7 @@
 			</div>
 			</header>
 
-			<nav>
-			<ul id="n" class="clearfix">
-				<li><a href="#">Homepage</a></li>
-				<li class="sel"><a href="#">Profile</a></li>
-				<li><a href="#">Archives</a></li>
-				<li><a href="#">Badges</a></li>
-				<li><a href="#">Search</a></li>
-				<li><a href="#">Find Friends</a></li>
-			</ul>
-			</nav>
+			
 
 			<div id="content" class="clearfix">
 				<section id="left">
