@@ -4,74 +4,75 @@
 <meta charset="utf-8" />
 <link href="css/MainStyle.css" rel="stylesheet" type="text/css" />
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script type="text/javascript">
+		$('#loginAJAX').on('click', function(e) {
+			var href = $(this).attr('href');
+			$('div.indexContainer').load(href + ' .container');
+			e.preventDefault();
+		});
+	</script>
+<script type="text/javascript">
+		$('#newMemberAJAX').on('click', function(e) {
+			var href = $(this).attr('href');
+			$('div.indexContainer').load(href + ' .container');
+			e.preventDefault();
+		});
+	</script>
 </head>
 <body>
-<header>
-	<div class="header">
-		<a href="#"><img src="img/Logo.jpg" alt="mysquare logo"
-			title="M&C Clubs " /></a> <span id="usernav"><a href="#">Logout</a>
-			- <a href="#">Settings</a> - <a href="#">My Profile<span></span>
-		</a></span>
+	<header>
+		<div class="header">
+			<a href="#"><img src="img/Logo.jpg" alt="mysquare logo"
+				title="M&C Clubs " /></a> <span id="usernav"><a href="#">Logout</a>
+
+			</span>
+		</div>
+
+
+
+
+		<div class="menu bar">
+
+			<ul id="nav">
+				<li><a href="#">Home</a>
+				<li><a href="about.html">About Us</a>
+				<li><a href="#">Membership</a>
+					<ul>
+						<li><a id="loginAJAX" href="login.jsp">Login</a></li>
+						<li><a id="newMemberAJAX" href="newMemberForm.jsp">Sign
+								Up</a></li>
+
+
+					</ul></li>
+				<li><a href="#">Contact us</a></li>
+				<li><a href="#">Menu 5</a></li>
+				<li><a href="#">Menu 6</a></li>
+			</ul>
+
+		</div>
+	</header>
+
+	<div id="menuLeft">
+		<b>Menu</b><br> HTML<br> CSS<br> JavaScript
+	</div>
+
+	<div id="content">
+		Content goes here
+
+		<div class="indexContainer"></div>
+	</div>
+	<div id="menuRight">
+		<b>Menu</b><br> HTML<br> CSS<br> JavaScript
 	</div>
 
 
 
 
-<div class="menu bar">
-
-	<ul id="nav">
-		<li><a href="#">Home</a>
-		<li><a href="about.html">About Us</a>
-		<li><a href="#">Membership</a>
-			<ul>
-				<li><a id="loginAJAX" href="login.jsp">Login</a></li>
-				<li><a id="newMemberAJAX" href="newMemberForm.jsp">Sign Up</a></li>
 
 
-			</ul></li>
-		<li><a href="#">Contact us</a></li>
-		<li><a href="#">Menu 5</a></li>
-		<li><a href="#">Menu 6</a></li>
-	</ul>
-
-</div>
-</header>
-<div id="menu" style="background-color:rgba(255,0,0,0.3);height:400px;width:100px;float:left;">
-<b>Menu</b><br>
-HTML<br>
-CSS<br>
-JavaScript</div>
-<div id="menu" style="background-color:rgba(255,0,0,0.3);height:400px;width:100px;float:right;">
-<b>Menu</b><br>
-HTML<br>
-CSS<br>
-JavaScript</div>
-
-<div id="content" class="content">
-Content goes here
-
-	<div class="indexContainer"></div>
-	
-</div>
-
-<script type="text/javascript">
-	$('#loginAJAX').on('click', function(e) {
-		var href = $(this).attr('href');
-		$('div.indexContainer').load(href + ' .container');
-		e.preventDefault();
-	});
-</script>
-<script type="text/javascript">
-	$('#newMemberAJAX').on('click', function(e) {
-		var href = $(this).attr('href');
-		$('div.indexContainer').load(href + ' .container');
-		e.preventDefault();
-	});
-</script>
 
 
-<div id="footer" style="background-color:rgba(255,0,0,0.3);clear:both;text-align:center;">
-Michael & Colm's Sports Club Web site</div>
+	<div id="footer">Michael & Colm's Sports Club Web site</div>
 
 
 </body>

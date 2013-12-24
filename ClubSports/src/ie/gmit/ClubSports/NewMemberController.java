@@ -37,19 +37,7 @@ public class NewMemberController extends HttpServlet {
 		String endDate = request.getParameter("endDate");
 		String memId = request.getParameter("memId");
 		
-//		startDate = "010114";
-//		dob = "270482";
-//		title = "mr";
-//		mobile = "0861686313";
-//		county = "mayoo";
-//		town ="castlebar";
-//		address = "50 Rossmor";
-//		lastName = "Govin";
-//		firstName = "Colm";
-//		password = "AssWord";
-//		email = "anyEmail.com";
-//		endDate ="31122014";
-//		memId = "2";
+
 		
        
 

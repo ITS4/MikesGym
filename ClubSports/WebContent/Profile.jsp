@@ -9,6 +9,15 @@
 <link rel="stylesheet" type="text/css" href="css/global.css" />
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>profile..............</title>
+<script>
+	$(document).ready(function() {
+		$("button").click(function() {
+			$("#div1").fadeIn();
+			$("#div2").fadeIn("slow");
+			$("#div3").fadeIn(3000);
+		});
+	});
+</script>
 </head>
 <p>
 	<c:forEach var="member" items="${profileList}">
@@ -24,7 +33,7 @@
 			</div>
 			</header>
 
-			
+
 
 			<div id="content" class="clearfix">
 				<section id="left">
@@ -36,10 +45,12 @@
 
 					<div class="data">
 
-						<h1>${member.firstName}  ${member.lastName}</h1>
-						<h3><td>${member.address}, ${member.town}, ${member.county}</h3>
+						<h1>${member.firstName}${member.lastName}</h1>
+						<h3>
+							<td>${member.address},${member.town},${member.county}
+						</h3>
 						<h4>
-							<a href="http://spyrestudios.com/">http://spyrestudios.com/</a>
+							<a href="http://spyrestudios.com/">something!!!</a>
 						</h4>
 						<div class="socialMediaLinks">
 							<a href="http://twitter.com/jakerocheleau" rel="me"
@@ -51,8 +62,8 @@
 						<div class="sep"></div>
 						<ul class="numbers clearfix">
 							<li>Reputation<strong>185</strong></li>
-							<li>Checkins<strong>344</strong></li>
-							<li class="nobrdr">Days Out<strong>127</strong></li>
+							<li>Checkins<strong>200</strong></li>
+							<li class="nobrdr">Days missed<strong>127</strong></li>
 						</ul>
 					</div>
 				</div>
@@ -64,7 +75,7 @@
 					<td>${member.email}</td>
 					<td>${member.firstName}</td>
 					<td>${member.lastName}</td>
-					
+
 					<td>${member.mobile}</td>
 					<td>${member.title}</td>
 					<td>${member.startDate}</td>
@@ -79,24 +90,30 @@
 					reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
 					pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
 					culpa qui officia deserunt mollit anim id est laborum.</p>
+				<div id="div1"
+					style="width: 80px; height: 80px; display: none; background-color: red;"></div>
+				<br>
+				<div id="div2"
+					style="width: 80px; height: 80px; display: none; background-color: green;"></div>
+				<br>
+				<div id="div3"
+					style="width: 80px; height: 80px; display: none; background-color: blue;"></div>
+
 
 				</section>
 
 				<section id="right">
 				<div class="gcontent">
 					<div class="head">
-						<h1>Badges(3)</h1>
+						<h1>Payment Status</h1>
 					</div>
 					<div class="boxy">
-						<p>Keep working to unlock badges!</p>
+
 
 						<div class="badgeCount">
-							<a href="#"><img src="img/foursquare-badge.png" /></a> <a
-								href="#"><img src="img/foursquare-badge.png" /></a> <a href="#"><img
-								src="img/foursquare-badge.png" /></a>
-						</div>
+						<p>You owe "this" EURO!</p>
+						<p><a href="#" class=button-link>Pay now with paypal!</a></p>
 
-						<span><a href="#">See all…</a></span>
 					</div>
 				</div>
 

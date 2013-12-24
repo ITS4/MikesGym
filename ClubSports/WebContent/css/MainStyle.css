@@ -1,8 +1,37 @@
 @CHARSET "ISO-8859-1";
-
+body{
+	background-color:rgba(255,0,0,0.3);
+}
 .header { width: 850px; overflow: hidden; margin: 0 auto; background: none; }
 
-header { height: 200px; background-color:rgba(255,0,0,0.3); }
+header { height: 200px;  }
+
+#menuLeft {height:400px;width:200px;position:absolute;
+left:100px;
+top:150px;}
+#menuRight {height:400px;width:200px;float:right;position:absolute;
+right:100px;
+top:150px;}
+#content{
+	background-color:#606060; 
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    }
+
+#footer{
+   text-align:center;
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:20px;   /* Height of the footer */
+   background:#6cf;
+}
 
 header #usernav { float: right; line-height: 100px; font-size: 14px; font-weight: bold; color: #555; }
 header #usernav a { color: #444; text-shadow: 0px 1px 1px #ddd; }
@@ -19,7 +48,7 @@ header #usernav a { color: #444; text-shadow: 0px 1px 1px #ddd; }
     list-style: none outside none;
     margin: 40px auto;
     text-shadow: 0 -1px 3px #202020;
-    width: 700px;
+    width: 650px;
 
     /* border radius */
     -moz-border-radius: 4px;
@@ -135,9 +164,7 @@ header #usernav a { color: #444; text-shadow: 0px 1px 1px #ddd; }
     			inset 0px 1px 0px 0px rgba(250, 250, 250, 0.5);
     border: 1px solid rgba(0, 0, 0, 0.3);
 }
-#content{
-	background-color:#888888;height:600px;width:600px;float:left;
-}
+
 .NewMember {
 	width: 410px;
 	margin: 50px auto;
@@ -148,3 +175,4 @@ header #usernav a { color: #444; text-shadow: 0px 1px 1px #ddd; }
     			inset 0px 1px 0px 0px rgba(250, 250, 250, 0.5);
     border: 1px solid rgba(0, 0, 0, 0.3);
 }
+
