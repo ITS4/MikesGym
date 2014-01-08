@@ -14,9 +14,9 @@ right:100px;
 top:150px;}
 #content{
 	background-color:#606060; 
-    width: 100px;
-    height: 100px;
-    position: absolute;
+    width: 600px;
+    height: 600px;
+    position: static;
     top:0;
     bottom: 0;
     left: 0;
