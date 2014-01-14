@@ -30,9 +30,10 @@ public class LoginController extends HttpServlet {
 	}
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String email = request.getParameter("email");//takes in email
-		String password = request.getParameter("password");//takes in password
+		String passwordBeforeHash = request.getParameter("password");//takes in password
 		String nextUrl = "/Profile.jsp";//might need to change it dynamically later
 
+		String password = Hashesh.MD5(passwordBeforeHash);
 
 		if (email != null && password != null ) {
 			Dao.getMemberByEmailAndPassword(email, password);//passes the two strings to dao method 

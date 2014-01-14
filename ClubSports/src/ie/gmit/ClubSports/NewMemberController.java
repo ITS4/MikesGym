@@ -24,7 +24,7 @@ public class NewMemberController extends HttpServlet {
     }
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String email = request.getParameter("email");
-		String password = request.getParameter("password");
+		String passwordBeforeHash = request.getParameter("password");
 		String firstName = request.getParameter("firstName");
 		String lastName = request.getParameter("lastName");
 		String address = request.getParameter("address");
@@ -37,7 +37,7 @@ public class NewMemberController extends HttpServlet {
 		String endDate = request.getParameter("endDate");
 		String memId = request.getParameter("memId");
 		
-
+String password = Hashesh.MD5(passwordBeforeHash);
 		
        
 
