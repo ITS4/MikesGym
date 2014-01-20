@@ -40,7 +40,7 @@ public class LoginController extends HttpServlet {
 		if (email.equals(adminEmail) && adminPassword.equals(passwordBeforeHash) ){
 			nextUrl = "/admin.jsp";
 			request.getRequestDispatcher(nextUrl).forward(request, response);
-			}
+			}else{
 
 		if (email != null && password != null ) {
 			Dao.getMemberByEmailAndPassword(email, password);//passes the two strings to dao method 
@@ -59,5 +59,5 @@ public class LoginController extends HttpServlet {
 
 		}
 	}
-
+}
 
