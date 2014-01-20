@@ -82,7 +82,7 @@
 
 					<tr>
 						<td align="right"><input name="Submit" type="submit"
-							value="Submit" /></td>
+							class=button-link value="Submit" /></td>
 					</tr>
 
 				</tbody>

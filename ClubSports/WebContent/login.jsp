@@ -22,7 +22,7 @@
 						name="email" placeholder="yourname@email.com">
 					<li><label for="password">Password</label> <input
 						type="password" name="password" placeholder="password">
-					<li><input type="submit" value="Login"></li>
+					<li><input type="submit" class=button-link value="Login"></li>
 				</ul>
 			</form>
 		</section>
