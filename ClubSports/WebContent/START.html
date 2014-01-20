@@ -4,20 +4,9 @@
 <meta charset="ISO-8859-1">
 <link href="css/Style.css" rel="stylesheet" type="text/css" />
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-<script type="text/javascript">
-		$('#loginAJAX').on('click', function(e) {
-			var href = $(this).attr('href');
-			$('div.indexContainer').load(href + ' .container');
-			e.preventDefault();
-		});
-	</script>
-<script type="text/javascript">
-		$('#newMemberAJAX').on('click', function(e) {
-			var href = $(this).attr('href');
-			$('div.indexContainer').load(href + ' .container');
-			e.preventDefault();
-		});
-	</script>
+
+
+
 <title>MC GYM</title>
 </head>
 <body>
@@ -52,6 +41,25 @@
 
 		</div>
 	</header>
+	<div id="indexContainer" class="indexContainer">Content goes here
 
+
+
+
+	</div>
+	<script type="text/javascript">
+		$('#loginAJAX').on('click', function(e) {
+			var href = $(this).attr('href');
+			$('div.indexContainer').load(href + ' .container');
+			e.preventDefault();
+		});
+	</script>
+	<script type="text/javascript">
+		$('#newMemberAJAX').on('click', function(e) {
+			var href = $(this).attr('href');
+			$('div.indexContainer').load(href + ' .container');
+			e.preventDefault();
+		});
+	</script>
 </body>
 </html>
