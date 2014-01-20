@@ -1,6 +1,7 @@
 package ie.gmit.ClubSports;
 
 import java.io.IOException;
+import java.util.List;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -49,9 +50,22 @@ String password = Hashesh.MD5(passwordBeforeHash);
 		
 		Dao.addMember(member);
 	
+		if (email != null && password != null ) {
+			Dao.getMemberByEmailAndPassword(email, password);//passes the two strings to dao method 
+
+			List<Member> profileList = Dao.getMemberByEmailAndPassword(email, password);
+			request.setAttribute("profileList", profileList);
+			for (Member profileItem : profileList){
+				System.out.println(profileItem);}
+				request.getRequestDispatcher(nextUrl).forward(request, response);
+			}else { 
+				nextUrl = "/login.jsp";	
+				request.getRequestDispatcher(nextUrl).forward(request, response);
+				}
 
 
-	request.getRequestDispatcher(nextUrl).forward(request, response);
 
-}
-}
+	}}
+	
+
+	
