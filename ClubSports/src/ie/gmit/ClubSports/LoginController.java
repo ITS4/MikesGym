@@ -34,6 +34,13 @@ public class LoginController extends HttpServlet {
 		String nextUrl = "/Profile.jsp";//might need to change it dynamically later
 
 		String password = Hashesh.MD5(passwordBeforeHash);
+		String adminEmail = "admin@email.com";
+		String adminPassword ="123";
+		
+		if (email.equals(adminEmail) && adminPassword.equals(passwordBeforeHash) ){
+			nextUrl = "/admin.jsp";
+			request.getRequestDispatcher(nextUrl).forward(request, response);
+			}
 
 		if (email != null && password != null ) {
 			Dao.getMemberByEmailAndPassword(email, password);//passes the two strings to dao method 
