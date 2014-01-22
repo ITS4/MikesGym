@@ -146,14 +146,14 @@ public class Dao {
 		list.add(member);
 		return list;
 	}
-	public static void  CreateTable() {
-		AnnotationConfiguration config = new AnnotationConfiguration();
-		config.addAnnotatedClass(Member.class);
-		config.configure();
-
-		new SchemaExport(config).create(true, true);
-
-	}
+//	public static void  CreateTable() {
+//		AnnotationConfiguration config = new AnnotationConfiguration();
+//		config.addAnnotatedClass(Member.class);
+//		config.configure();
+//
+//		new SchemaExport(config).create(true, true);
+//
+//	}
 
 
 }
