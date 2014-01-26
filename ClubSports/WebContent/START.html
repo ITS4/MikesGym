@@ -5,16 +5,14 @@
 <link href="css/Style.css" rel="stylesheet" type="text/css" />
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 
-
-
 <title>MC GYM</title>
 </head>
 <body>
 	<header>
 		<div class="menu bar">
 			<ul id="nav">
-				<li><a href="START.html">Home</a>
-				<li><a href="about.html">About Us</a>
+				<li><a href="START.html">Home</a></li>
+				<li><a id="about" href="about.html">About Us</a></li>
 				<li><a href="#">Membership</a>
 					<ul>
 						<li><a id="newMemberAJAX" href="newMemberForm.jsp">Sign Up</a></li>
@@ -49,6 +47,12 @@
 			e.preventDefault();
 		});
 	</script>
-	
+	<script type="text/javascript">
+		$('#about').on('click', function(e) {
+			var href = $(this).attr('href');
+			$('div.indexContainer').load(href + ' .container');
+			e.preventDefault();
+		});
+	</script>
 </body>
 </html>

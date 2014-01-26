@@ -1,40 +1,16 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
-
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="css/MainStyle.css" />
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 <title>profile..............</title>
-<script>
-	$(document).ready(function() {
-		$("button").click(function() {
-			$("#div1").fadeIn();
-			$("#div2").fadeIn("slow");
-			$("#div3").fadeIn(3000);
-		});
-	});
-</script>
 </head>
-<p>
-	<c:forEach var="member" items="${profileList}">
+<c:forEach var="member" items="${profileList}">
 
-		<body>
-			<header>
-			<div class="wrapper">
-				<a href="#"><img src="img/Logo.jpg" alt="mysquare logo"
-					title="mysquare - checkin and go home!" /></a> <span id="usernav"><a
-					href="#">Logout</a> - <a href="#">Settings</a> - <a href="#">My
-						Profile<span><img src="img/user_avatar_s.jpg" /></span>
-				</a></span>
-			</div>
-			</header>
-
-
-
+	<body>
 			<div id="content" class="clearfix">
 				<section id="left">
 				<div id="userStats" class="clearfix">
